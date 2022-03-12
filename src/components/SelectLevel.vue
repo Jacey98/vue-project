@@ -11,7 +11,7 @@
       </li>
       <li @click="showForm = !showForm">🌞 自定义</li>
     </ul>
-    <auto-form v-if="showForm"></auto-form>
+    <auto-form v-if="showForm" :form-info="formInfo"></auto-form>
   </div>
 </template>
 
@@ -39,7 +39,29 @@ export default {
           value: [16, 16, 30],
         },
       ],
-    };
+      formInfo: [{
+        name: 'height',
+        type: "integer", // select_item下拉列表、string单行文本、multiple多行文本、integer单行数字
+        title: "高度",
+        prompt_msg: '请输入1-99之间的数字',
+        selectObj: null,
+        check: 1 // 校验方式的编号
+      },{
+        name: 'height',
+        type: "integer", 
+        title: "宽度",
+        prompt_msg: '请输入1-99之间的数字',
+        selectObj: null,
+        check: 1 
+      }，{
+        name: 'height',
+        type: "integer", 
+        title: "雷数",
+        prompt_msg: '请输入1-99之间的数字',
+        selectObj: null,
+        check: 1
+      }],
+    }
   },
   methods: {
     // 选择难度

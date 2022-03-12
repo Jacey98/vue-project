@@ -6,6 +6,12 @@
 export default {
   name: "autoForm",
   components: {},
+  props: {
+    formInfo: {
+      required: true,
+      type: Array,
+    },
+  },
   data() {
     return {};
   },
