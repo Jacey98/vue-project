@@ -1,24 +1,16 @@
-# vue-project
+# 简介
+Vue的练习项目
 
-## Project setup
+# 项目预览
+
+# 项目运行
 ```
+git clone 
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
+# 项目内容
+## 扫雷
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 自定义表单
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
